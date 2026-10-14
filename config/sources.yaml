@@ -1,0 +1,52 @@
+# Sources for Louisville Arts / Events / Food, plus Gmail feeds.
+# Each source: url (if any), section, how (web | gmail | search), notes.
+# Health is tracked in state/run_log.md; a source that returns nothing 4 runs
+# in a row is flagged for review in the email footer.
+# URLs are starting points — first live run confirms each and fixes any that 404.
+
+gmail_feeds:
+  - {name: Live Nation Louisville, query: "from:eml.livenation.com newer_than:8d"}
+  - {name: Ticketmaster Just Announced, query: "from:newsletter@email.ticketmaster.com newer_than:8d"}
+  - {name: Bandsintown, query: "from:bandsintown.com newer_than:8d"}
+  - {name: Kentucky Shakespeare, query: "from:kyshakespeare.com newer_than:8d"}
+  - {name: John's forwards (Instagram etc.), query: "to:johnschlafer+events@gmail.com newer_than:8d"}
+
+arts:
+  - {name: The Kentucky Center, url: https://www.kentuckycenter.org/, notes: Whitney Hall, Brown Theatre, Bomhard}
+  - {name: Broadway in Louisville, url: https://louisville.broadway.com/, notes: John has bought here (Six, 2024)}
+  - {name: Actors Theatre of Louisville, url: https://actorstheatre.org/}
+  - {name: Kentucky Shakespeare, url: https://kyshakespeare.com/, notes: John attended Shakespeare in the Parks}
+  - {name: Louisville Orchestra, url: https://louisvilleorchestra.org/, notes: Teddy Abrams}
+  - {name: Louisville Ballet, url: https://www.louisvilleballet.org/}
+  - {name: Kentucky Opera, url: https://kyopera.org/}
+  - {name: Speed Art Museum, url: https://www.speedmuseum.org/}
+  - {name: KMAC Contemporary Art Museum, url: https://www.kmacmuseum.org/}
+  - {name: 21c Museum Hotel Louisville, url: https://www.21cmuseumhotels.com/louisville/}
+  - {name: Frazier History Museum, url: https://fraziermuseum.org/}
+  - {name: Muhammad Ali Center, url: https://alicenter.org/}
+  - {name: Louisville Visual Art, url: https://louisvillevisualart.org/}
+  - {name: First Friday Trolley Hop / NuLu gallery openings, how: search}
+
+events:
+  - {name: Louisville Tourism events, url: https://www.gotolouisville.com/events/}
+  - {name: Courier Journal things to do, how: search, query: "courier-journal.com things to do Louisville this week"}
+  - {name: LEO Weekly, url: https://www.leoweekly.com/}
+  - {name: Louisville Magazine, url: https://www.louisville.com/}
+  - {name: Louisville Public Media / WFPL, how: search}
+  - {name: Paristown, url: https://paristown.com/, notes: John attended Fête de Noël}
+  - {name: Waterfront Botanical Gardens, url: https://waterfrontgardens.org/, notes: John attended Gardens Aglimmer}
+  - {name: Eventbrite Louisville, how: search}
+  - {name: Neighborhood festivals and art fairs, how: search, notes: "St. James Court, Highlands, Germantown, Crescent Hill, NuLu"}
+
+food:
+  - {name: Tock Louisville events, how: search, query: "exploretock.com Louisville event dinner"}
+  - {name: Resy Louisville events, how: search}
+  - {name: Crown Liquors tastings, how: search, notes: John attended bourbon tastings 2015–2017}
+  - {name: Bourbon distillery events (Louisville + Bourbon Trail), how: search}
+  - {name: Chef collaboration dinners / pop-ups, how: search, query: "Louisville chef collaboration dinner OR pop-up OR supper club"}
+  - {name: Louisville food festivals, how: search}
+
+# Instagram accounts John wants watched. Claude can't read Instagram directly;
+# for each account, find where it links out (Linktree, Tock, Resy, Eventbrite, site)
+# and check those. John forwards anything else to johnschlafer+events@gmail.com.
+instagram_accounts: []

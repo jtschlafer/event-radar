@@ -1,0 +1,11 @@
+# Standing preferences, learned from feedback. Applied every run.
+likes:
+  - bourbon tastings and distillery events
+  - chef dinners, pop-ups, one-night-only food events
+  - Broadway and touring theatre at The Kentucky Center
+  - outdoor theatre and music in parks
+  - museum openings and exhibitions
+dislikes: []
+venues_avoid: []
+max_drive_hours: null   # set if John wants a cap
+notes: []

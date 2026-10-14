@@ -1,0 +1,97 @@
+# Event Radar artist list
+# Tiers decide geography (see cities.yaml):
+#   tier1     → all six cities incl. Chicago + Columbus
+#   tier2     → Louisville, Cincinnati, Indianapolis, Nashville
+#   discovery → Louisville + Cincinnati only, until promoted
+# evidence: purchased | bit_follow (Bandsintown artist messages) | bit_tracked (show alerts / weekly list)
+#           | lastfm:<seed> (Last.fm similar to a listed artist) | spotify (pending export)
+# status: draft — awaiting John's first edit (2026-10-13)
+
+tier1:
+  - {name: Death Cab for Cutie, evidence: [bit_follow, bit_tracked]}
+  - {name: Caamp, evidence: [bit_follow, bit_tracked]}
+  - {name: Jon Batiste, evidence: [bit_follow, bit_tracked]}
+  - {name: St. Paul & the Broken Bones, aliases: [St. Paul and the Broken Bones], evidence: [bit_tracked]}
+  - {name: The Jayhawks, evidence: [bit_follow, bit_tracked]}
+  - {name: The Black Keys, evidence: [bit_follow, bit_tracked]}
+  - {name: Lake Street Dive, evidence: [bit_follow, bit_tracked]}
+  - {name: Shakey Graves, evidence: [bit_follow, bit_tracked]}
+  - {name: Pearl Jam, aliases: [Eddie Vedder], evidence: [bit_follow]}
+  - {name: Houndmouth, evidence: [purchased, "lastfm:Caamp", "lastfm:Shakey Graves"]}
+
+tier2:
+  # Americana / folk
+  - {name: Mt. Joy, evidence: [bit_follow, "lastfm:Caamp"]}
+  - {name: Iron & Wine, evidence: [bit_follow, bit_tracked]}
+  - {name: Fruit Bats, evidence: [bit_follow, "lastfm:Shakey Graves"]}
+  - {name: Lord Huron, evidence: [bit_follow]}
+  - {name: The Lumineers, evidence: [purchased, bit_follow, bit_tracked]}
+  - {name: Watchhouse, evidence: [bit_tracked, "lastfm:Caamp", "lastfm:Shakey Graves"]}
+  - {name: Gregory Alan Isakov, evidence: [bit_tracked, "lastfm:Caamp"]}
+  - {name: Bonny Light Horseman, evidence: [bit_tracked]}
+  - {name: Allison Russell, evidence: [bit_tracked]}
+  - {name: Stephen Wilson Jr., evidence: [bit_tracked]}
+  - {name: Lyle Lovett, evidence: [bit_tracked]}
+  - {name: Steve Earle, evidence: [bit_tracked, "lastfm:The Jayhawks"]}
+  - {name: Gillian Welch, evidence: [bit_tracked]}
+  - {name: The Wood Brothers, evidence: [bit_tracked, "lastfm:Shakey Graves"]}
+  - {name: Old Crow Medicine Show, evidence: [bit_tracked]}
+  - {name: Jason Isbell, evidence: [bit_tracked]}
+  - {name: Colter Wall, evidence: [bit_tracked]}
+  - {name: Ben Sollee, evidence: [bit_tracked]}
+  # Indie rock
+  - {name: Modest Mouse, evidence: [bit_tracked, "lastfm:Death Cab for Cutie"]}
+  - {name: Pixies, evidence: [bit_follow, bit_tracked]}
+  - {name: The Decemberists, evidence: [bit_follow, "lastfm:Death Cab for Cutie"]}
+  - {name: Portugal. The Man, evidence: [bit_follow, bit_tracked]}
+  - {name: The Flaming Lips, evidence: [bit_tracked]}
+  - {name: Beck, evidence: [bit_tracked]}
+  - {name: Wilco, aliases: [Jeff Tweedy], evidence: [bit_tracked]}
+  - {name: Bright Eyes, evidence: [bit_tracked, "lastfm:Death Cab for Cutie"]}
+  - {name: The Smashing Pumpkins, evidence: [bit_follow, bit_tracked]}
+  # Soul / blues
+  - {name: Black Joe Lewis, evidence: [bit_follow, bit_tracked]}
+  - {name: Rebirth Brass Band, evidence: [bit_tracked]}
+  - {name: Buddy Guy, evidence: [bit_tracked]}
+  - {name: Reverend Horton Heat, evidence: [bit_tracked]}
+  # Jazz
+  - {name: Herbie Hancock, evidence: [bit_tracked]}
+  - {name: Robert Glasper, evidence: [bit_tracked]}
+  - {name: Diana Krall, evidence: [bit_tracked]}
+  - {name: Wynton Marsalis, evidence: [bit_tracked]}
+
+discovery:
+  # Confirmed by two or more signals first
+  - {name: Nathaniel Rateliff & the Night Sweats, evidence: ["lastfm:St. Paul & the Broken Bones", "lastfm:Shakey Graves"]}
+  - {name: The Head and the Heart, evidence: ["lastfm:Caamp"]}
+  - {name: Leon Bridges, evidence: ["lastfm:Jon Batiste"]}
+  - {name: The National, evidence: ["lastfm:Death Cab for Cutie"], note: Cincinnati roots}
+  - {name: Band of Horses, evidence: ["lastfm:Death Cab for Cutie"]}
+  - {name: Shovels & Rope, evidence: ["lastfm:Shakey Graves"]}
+  - {name: Langhorne Slim, evidence: ["lastfm:Shakey Graves"]}
+  # Last.fm only
+  - {name: Black Pumas, evidence: ["lastfm:St. Paul & the Broken Bones"]}
+  - {name: Durand Jones & the Indications, evidence: ["lastfm:St. Paul & the Broken Bones"]}
+  - {name: The Teskey Brothers, evidence: ["lastfm:St. Paul & the Broken Bones"]}
+  - {name: Son Volt, evidence: ["lastfm:The Jayhawks"]}
+  - {name: Old 97's, evidence: ["lastfm:The Jayhawks"]}
+  - {name: Jacob Collier, evidence: ["lastfm:Jon Batiste"]}
+  - {name: Gregory Porter, evidence: ["lastfm:Jon Batiste"]}
+  - {name: Oliver Hazard, evidence: ["lastfm:Caamp"], note: Ohio band, plays the region}
+
+# Route to Louisville Arts instead of concerts (pending John's call)
+arts_calendar:
+  - Itzhak Perlman
+  - Yo-Yo Ma
+  - Teddy Abrams / Louisville Orchestra
+
+# Pending John's call — possibly family members' taste. Not searched until confirmed.
+pending_review:
+  - {name: girl in red, note: tickets transferred to Maya, 2024}
+  - {name: Laufey}
+  - {name: Pitbull}
+  - {name: Kesha}
+  - {name: "Tyler, The Creator"}
+
+# Removed artists are never re-suggested. Format: {name, removed_on, reason}
+removed: []

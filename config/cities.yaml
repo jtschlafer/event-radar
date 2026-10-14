@@ -1,0 +1,76 @@
+# Which tiers each city covers, and venues to check directly.
+# check: weekly → open the venue calendar every run (catches non-Ticketmaster shows)
+#        via_ticketmaster → covered by Ticketmaster search; no separate check needed
+# Venue list is a starting point from memory — first live run must confirm names/URLs
+# and set verified: true (or fix/remove).
+
+cities:
+  Louisville:
+    tz: America/New_York
+    tiers: [tier1, tier2, discovery]
+    venues:
+      - {name: KFC Yum! Center, check: via_ticketmaster}
+      - {name: Louisville Palace, check: via_ticketmaster}
+      - {name: Mercury Ballroom, check: via_ticketmaster}
+      - {name: Old Forester's Paristown Hall, check: weekly}
+      - {name: Headliners Music Hall, check: weekly}
+      - {name: Zanzabar, check: weekly}
+      - {name: The Kentucky Center (Whitney Hall / Brown Theatre), check: weekly}
+      - {name: Iroquois Amphitheater, check: weekly}
+      - {name: Waterfront Park (festivals), check: weekly}
+  Cincinnati:
+    tz: America/New_York
+    tiers: [tier1, tier2, discovery]
+    venues:
+      - {name: Riverbend Music Center, check: via_ticketmaster}
+      - {name: Andrew J Brady Music Center, check: via_ticketmaster}
+      - {name: MegaCorp Pavilion (Newport, KY), check: via_ticketmaster}
+      - {name: Taft Theatre, check: via_ticketmaster}
+      - {name: Bogart's, check: via_ticketmaster}
+      - {name: The Ludlow Garage, check: weekly}
+      - {name: Heritage Bank Center, check: via_ticketmaster}
+  Indianapolis:
+    tz: America/Indiana/Indianapolis
+    tiers: [tier1, tier2]
+    venues:
+      - {name: Ruoff Music Center, check: via_ticketmaster}
+      - {name: Old National Centre (Murat / Egyptian Room), check: via_ticketmaster}
+      - {name: HI-FI Indy, check: weekly}
+      - {name: The Vogue, check: weekly}
+      - {name: TCU Amphitheater at White River State Park, check: via_ticketmaster}
+      - {name: Gainbridge Fieldhouse, check: via_ticketmaster}
+  Nashville:
+    tz: America/Chicago
+    tiers: [tier1, tier2]
+    venues:
+      - {name: Ryman Auditorium, check: weekly}
+      - {name: Ascend Amphitheater, check: via_ticketmaster}
+      - {name: Bridgestone Arena, check: via_ticketmaster}
+      - {name: Brooklyn Bowl Nashville, check: weekly}
+      - {name: The Basement East, check: weekly}
+      - {name: Marathon Music Works, check: weekly}
+      - {name: Grand Ole Opry House, check: weekly}
+  Chicago:
+    tz: America/Chicago
+    tiers: [tier1]
+    venues:
+      - {name: United Center, check: via_ticketmaster}
+      - {name: The Salt Shed, check: via_ticketmaster}
+      - {name: Thalia Hall, check: weekly}
+      - {name: Metro, check: weekly}
+      - {name: The Riviera Theatre, check: via_ticketmaster}
+      - {name: Huntington Bank Pavilion, check: via_ticketmaster}
+      - {name: Chicago Theatre, check: via_ticketmaster}
+      - {name: Ravinia, check: weekly}
+  Columbus:
+    tz: America/New_York
+    tiers: [tier1]
+    venues:
+      - {name: KEMBA Live!, check: via_ticketmaster}
+      - {name: Newport Music Hall, check: via_ticketmaster}
+      - {name: Schottenstein Center, check: via_ticketmaster}
+      - {name: Nationwide Arena, check: via_ticketmaster}
+
+# Nearby cities that showed up in John's alerts. Not searched by default;
+# included only for Tier 1 if John opts in.
+optional_cities: [Lexington, Bloomington IN, Newport KY]

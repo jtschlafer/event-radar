@@ -1,0 +1,130 @@
+<!doctype html>
+<!--
+  Event Radar email template.
+  Placeholders: {{name}}. Repeating blocks: <!-- BEGIN x --> ... <!-- END x -->.
+  Email clients ignore <style> blocks, so every style is inline. Keep it that way.
+  Max width 640px; single column; works in Gmail web + iOS Mail, light and dark.
+-->
+<html>
+<body style="margin:0;padding:0;background:#f4f1ec;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f1ec;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;background:#ffffff;border-radius:10px;font-family:Georgia,'Times New Roman',serif;color:#1f1d1a;">
+
+  <!-- Header -->
+  <tr><td style="padding:28px 28px 8px;">
+    <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9a3b1f;">Event Radar</div>
+    <div style="font-size:26px;line-height:1.25;margin-top:4px;">Week of {{week_label}}</div>
+    <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#5c5750;margin-top:6px;">{{new_count}} new announcements · {{presale_count}} presales in the next 10 days · {{local_count}} Louisville picks</div>
+  </td></tr>
+
+  <!-- 1. Act now -->
+  <tr><td style="padding:20px 28px 4px;">
+    <div style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#ffffff;background:#9a3b1f;display:inline-block;padding:4px 10px;border-radius:4px;">Act now — presales &amp; on-sales</div>
+  </td></tr>
+  <tr><td style="padding:8px 28px 4px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;">
+      <!-- BEGIN presale_row -->
+      <tr>
+        <td valign="top" style="padding:10px 12px 10px 0;border-bottom:1px solid #ece7df;width:120px;">
+          <div style="font-weight:bold;color:#9a3b1f;">{{presale_start_day}}</div>
+          <div style="color:#5c5750;">{{presale_start_time_et}} ET</div>
+        </td>
+        <td valign="top" style="padding:10px 0;border-bottom:1px solid #ece7df;">
+          <div style="font-weight:bold;">{{artist}} <span style="font-weight:normal;color:#5c5750;">· {{tier_badge}}</span></div>
+          <div>{{venue}}, {{city}} · show {{show_date}}</div>
+          <div style="color:#5c5750;">{{presale_name}}{{presale_note}} · general on-sale {{onsale}}</div>
+          <div><a href="{{url}}" style="color:#9a3b1f;">Tickets / details</a></div>
+        </td>
+      </tr>
+      <!-- END presale_row -->
+    </table>
+  </td></tr>
+
+  <!-- 2. New announcements, grouped by city then artist -->
+  <tr><td style="padding:24px 28px 4px;">
+    <div style="font-size:20px;border-bottom:2px solid #1f1d1a;padding-bottom:4px;">New announcements</div>
+  </td></tr>
+  <!-- BEGIN city_group -->
+  <tr><td style="padding:12px 28px 0;">
+    <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#5c5750;">{{city}}</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;">
+      <!-- BEGIN new_row -->
+      <tr><td style="padding:8px 0;border-bottom:1px solid #ece7df;">
+        <span style="font-weight:bold;">{{artist}}</span> <span style="color:#5c5750;">· {{tier_badge}}</span><br>
+        {{show_date}} · {{venue}} · {{price}}<br>
+        <span style="color:#5c5750;">{{sale_line}}</span> · <a href="{{url}}" style="color:#9a3b1f;">link</a>
+      </td></tr>
+      <!-- END new_row -->
+    </table>
+  </td></tr>
+  <!-- END city_group -->
+
+  <!-- 3. Upcoming calendar -->
+  <tr><td style="padding:24px 28px 4px;">
+    <div style="font-size:20px;border-bottom:2px solid #1f1d1a;padding-bottom:4px;">Upcoming — next 120 days</div>
+  </td></tr>
+  <tr><td style="padding:8px 28px 0;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;">
+      <!-- BEGIN calendar_row -->
+      <tr>
+        <td style="padding:6px 10px 6px 0;border-bottom:1px solid #ece7df;white-space:nowrap;width:90px;color:#5c5750;">{{show_date_short}}</td>
+        <td style="padding:6px 0;border-bottom:1px solid #ece7df;"><span style="font-weight:bold;">{{artist}}</span> · {{venue}}, {{city}} <span style="color:#5c5750;">{{status}}</span></td>
+      </tr>
+      <!-- END calendar_row -->
+    </table>
+  </td></tr>
+
+  <!-- 4. Louisville sections (repeat for Arts, Events, Food & Drink) -->
+  <!-- BEGIN local_section -->
+  <tr><td style="padding:24px 28px 4px;">
+    <div style="font-size:20px;border-bottom:2px solid #1f1d1a;padding-bottom:4px;">Louisville: {{section_name}}</div>
+  </td></tr>
+  <tr><td style="padding:8px 28px 0;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;">
+      <!-- BEGIN local_row -->
+      <tr><td style="padding:8px 0;border-bottom:1px solid #ece7df;">
+        <span style="font-weight:bold;">{{title}}</span>{{new_badge}}<br>
+        {{date_range}} · {{venue}}{{price_part}}<br>
+        <span style="color:#5c5750;">{{one_line_why}}</span> · <a href="{{url}}" style="color:#9a3b1f;">link</a>
+      </td></tr>
+      <!-- END local_row -->
+    </table>
+  </td></tr>
+  <!-- END local_section -->
+
+  <!-- 5. Discovery picks (max 3) -->
+  <tr><td style="padding:24px 28px 4px;">
+    <div style="font-size:20px;border-bottom:2px solid #1f1d1a;padding-bottom:4px;">Discovery picks</div>
+  </td></tr>
+  <tr><td style="padding:8px 28px 0;font-family:Arial,Helvetica,sans-serif;font-size:14px;">
+    <!-- BEGIN discovery_row -->
+    <p style="margin:8px 0;"><span style="font-weight:bold;">{{artist}}</span> — {{why}}. {{show_line}} <a href="{{url}}" style="color:#9a3b1f;">link</a></p>
+    <!-- END discovery_row -->
+  </td></tr>
+
+  <!-- 6. Questions (omit block entirely when empty) -->
+  <!-- BEGIN questions -->
+  <tr><td style="padding:24px 28px 4px;">
+    <div style="font-size:20px;border-bottom:2px solid #1f1d1a;padding-bottom:4px;">Questions for you</div>
+    <ul style="font-family:Arial,Helvetica,sans-serif;font-size:14px;padding-left:18px;">
+      <!-- BEGIN question_row --><li style="margin:6px 0;">{{question}}</li><!-- END question_row -->
+    </ul>
+  </td></tr>
+  <!-- END questions -->
+
+  <!-- 7. Footer -->
+  <tr><td style="padding:24px 28px 28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#5c5750;line-height:1.5;">
+    <div style="border-top:1px solid #ece7df;padding-top:12px;">
+      <strong>Tune it:</strong> reply to this email with any of
+      <code>+ Artist</code> · <code>- Artist</code> · <code>T1 Artist</code> · <code>more like Artist</code> · <code>no &lt;venue or category&gt;</code>, or plain notes.
+      Forward Instagram finds to johnschlafer+events@gmail.com.<br>
+      Sources checked: {{sources_ok}} · failed: {{sources_failed}} · run {{run_id}}{{push_warning}}
+    </div>
+  </td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
