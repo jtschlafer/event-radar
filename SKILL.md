@@ -56,7 +56,7 @@ For each artist, search only the cities their tier allows (`cities.yaml`):
 2. Web search `"<artist>" tour 2026 2027` for newly announced dates and presale details
    (artist site, Bandsintown, venue pages, AXS, Etix, See Tickets, DICE).
 3. Check each venue calendar in `cities.yaml` marked `check: weekly` for Tier 1/2 and Discovery matches.
-Discovery artists: Louisville + Cincinnati only, unless promoted.
+Discovery artists: Louisville, Cincinnati and Indianapolis only, unless promoted.
 
 ### 4. Louisville arts, events, food
 Work through `sources.yaml` by section. Keep items that start in the next 60 days (festivals and

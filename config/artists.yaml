@@ -5,65 +5,67 @@
 #   discovery → Louisville + Cincinnati + Indianapolis only, until promoted
 # evidence: purchased | bit_follow (Bandsintown artist messages) | bit_tracked (show alerts / weekly list)
 #           | lastfm:<seed> (Last.fm similar to a listed artist) | spotify (pending export)
-# status: draft — awaiting John's first edit (2026-10-13)
+# status: John's first edit applied 2026-10-13 (see state/feedback.md)
 
 tier1:
+  # Americana / folk
   - {name: Caamp, evidence: [bit_follow, bit_tracked]}
-  - {name: Jon Batiste, evidence: [bit_follow, bit_tracked]}
-  - {name: St. Paul & the Broken Bones, aliases: [St. Paul and the Broken Bones], evidence: [bit_tracked]}
-  - {name: The Jayhawks, evidence: [bit_follow, bit_tracked]}
-  - {name: The Black Keys, evidence: [bit_follow, bit_tracked]}
-  - {name: Lake Street Dive, evidence: [bit_follow, bit_tracked]}
-  - {name: Shakey Graves, evidence: [bit_follow, bit_tracked]}
-  - {name: Pearl Jam, aliases: [Eddie Vedder], evidence: [bit_follow]}
+  - {name: Fruit Bats, evidence: [bit_follow, "lastfm:Shakey Graves"]}
+  - {name: Gregory Alan Isakov, evidence: [bit_tracked, "lastfm:Caamp"]}
   - {name: Houndmouth, evidence: [purchased, "lastfm:Caamp", "lastfm:Shakey Graves"]}
+  - {name: Lord Huron, evidence: [bit_follow]}
+  - {name: Mt. Joy, evidence: [bit_follow, "lastfm:Caamp"]}
+  - {name: Shakey Graves, evidence: [bit_follow, bit_tracked]}
+  - {name: The Head and the Heart, evidence: ["lastfm:Caamp"]}
+  - {name: The Jayhawks, evidence: [bit_follow, bit_tracked]}
+  - {name: The Lumineers, evidence: [purchased, bit_follow, bit_tracked]}
+  # Rock
+  - {name: Pearl Jam, aliases: [Eddie Vedder], evidence: [bit_follow]}
+  - {name: The Black Keys, evidence: [bit_follow, bit_tracked]}
+  # Soul / R&B
+  - {name: Lake Street Dive, evidence: [bit_follow, bit_tracked]}
+  - {name: Leon Bridges, evidence: ["lastfm:Jon Batiste"]}
+  - {name: St. Paul & the Broken Bones, aliases: [St. Paul and the Broken Bones], evidence: [bit_tracked]}
+  # Jazz
+  - {name: Diana Krall, evidence: [bit_tracked]}
+  - {name: Jon Batiste, evidence: [bit_follow, bit_tracked]}
+  - {name: Laufey, evidence: [bit_follow]}
+  # Pop / hip-hop
+  - {name: Kesha, evidence: [bit_tracked]}
+  - {name: Pitbull, evidence: [bit_tracked]}
+  - {name: "Tyler, The Creator", evidence: [bit_tracked]}
 
 tier2:
   # Americana / folk
-  - {name: Mt. Joy, evidence: [bit_follow, "lastfm:Caamp"]} # Move to Tier 1
-  - {name: Iron & Wine, evidence: [bit_follow, bit_tracked]}
-  - {name: Fruit Bats, evidence: [bit_follow, "lastfm:Shakey Graves"]} # Move to Tier 1
-  - {name: Lord Huron, evidence: [bit_follow]} # Move to Tier 1
-  - {name: The Lumineers, evidence: [purchased, bit_follow, bit_tracked]} # Move to Tier 1
-  - {name: Watchhouse, evidence: [bit_tracked, "lastfm:Caamp", "lastfm:Shakey Graves"]} # Remove
-  - {name: Gregory Alan Isakov, evidence: [bit_tracked, "lastfm:Caamp"]} # Move to Tier 1
-  - {name: Bonny Light Horseman, evidence: [bit_tracked]}
   - {name: Allison Russell, evidence: [bit_tracked]}
-  - {name: Stephen Wilson Jr., evidence: [bit_tracked]}
-  - {name: Lyle Lovett, evidence: [bit_tracked]}
-  - {name: Steve Earle, evidence: [bit_tracked, "lastfm:The Jayhawks"]}
-  - {name: Gillian Welch, evidence: [bit_tracked]}
-  - {name: The Wood Brothers, evidence: [bit_tracked, "lastfm:Shakey Graves"]} #Remove
-  - {name: Old Crow Medicine Show, evidence: [bit_tracked]}
-  - {name: Jason Isbell, evidence: [bit_tracked]}
-  - {name: Colter Wall, evidence: [bit_tracked]} # Remove
   - {name: Ben Sollee, evidence: [bit_tracked]}
+  - {name: Bonny Light Horseman, evidence: [bit_tracked]}
+  - {name: Gillian Welch, evidence: [bit_tracked]}
+  - {name: Iron & Wine, evidence: [bit_follow, bit_tracked]}
+  - {name: Jason Isbell, evidence: [bit_tracked]}
+  - {name: Lyle Lovett, evidence: [bit_tracked]}
+  - {name: Old Crow Medicine Show, evidence: [bit_tracked]}
+  - {name: Stephen Wilson Jr., evidence: [bit_tracked]}
+  - {name: Steve Earle, evidence: [bit_tracked, "lastfm:The Jayhawks"]}
   # Indie rock
-  - {name: Modest Mouse, evidence: [bit_tracked, "lastfm:Death Cab for Cutie"]} # Remove
-  - {name: Pixies, evidence: [bit_follow, bit_tracked]} # Remove
-  - {name: The Decemberists, evidence: [bit_follow, "lastfm:Death Cab for Cutie"]}
-  - {name: Portugal. The Man, evidence: [bit_follow, bit_tracked]}
-  - {name: The Flaming Lips, evidence: [bit_tracked]}
   - {name: Beck, evidence: [bit_tracked]}
+  - {name: Portugal. The Man, evidence: [bit_follow, bit_tracked]}
+  - {name: The Decemberists, evidence: [bit_follow, "lastfm:Death Cab for Cutie"]}
+  - {name: The Flaming Lips, evidence: [bit_tracked]}
+  - {name: The Smashing Pumpkins, evidence: [bit_follow, bit_tracked]}
   - {name: Wilco, aliases: [Jeff Tweedy], evidence: [bit_tracked]}
-  - {name: Bright Eyes, evidence: [bit_tracked, "lastfm:Death Cab for Cutie"]} #Remove
-  - {name: The Smashing Pumpkins, evidence: [bit_follow, bit_tracked]} 
   # Soul / blues
   - {name: Black Joe Lewis, evidence: [bit_follow, bit_tracked]}
   - {name: Rebirth Brass Band, evidence: [bit_tracked]}
-  - {name: Buddy Guy, evidence: [bit_tracked]} # Remove
   - {name: Reverend Horton Heat, evidence: [bit_tracked]}
   # Jazz
   - {name: Herbie Hancock, evidence: [bit_tracked]}
   - {name: Robert Glasper, evidence: [bit_tracked]}
-  - {name: Diana Krall, evidence: [bit_tracked]} # Move to Tier 1 Also, organize tier one by genre
   - {name: Wynton Marsalis, evidence: [bit_tracked]}
 
 discovery:
   # Confirmed by two or more signals first
   - {name: Nathaniel Rateliff & the Night Sweats, evidence: ["lastfm:St. Paul & the Broken Bones", "lastfm:Shakey Graves"]}
-  - {name: The Head and the Heart, evidence: ["lastfm:Caamp"]} # Move to Tier 1
-  - {name: Leon Bridges, evidence: ["lastfm:Jon Batiste"]} # Move to Tier 1
   - {name: The National, evidence: ["lastfm:Death Cab for Cutie"], note: Cincinnati roots}
   - {name: Band of Horses, evidence: ["lastfm:Death Cab for Cutie"]}
   - {name: Shovels & Rope, evidence: ["lastfm:Shakey Graves"]}
@@ -84,13 +86,17 @@ arts_calendar:
   - Yo-Yo Ma
   - Teddy Abrams / Louisville Orchestra
 
-# Pending John's call — possibly family members' taste. Not searched until confirmed.
-pending_review:
-  - {name: girl in red, note: tickets transferred to Maya, 2024} # Delete this
-  - {name: Laufey} # Move to Tier 1
-  - {name: Pitbull} # Move to Tier 1
-  - {name: Kesha} # Move to Tier 1
-  - {name: "Tyler, The Creator"} # Move to Tier 1
+# Pending John's call. Not searched until confirmed.
+pending_review: []
 
-# Removed artists are never re-suggested. Format: {name, removed_on, reason}
-removed: []
+# Removed artists are never searched or re-suggested. Format: {name, removed_on, reason}
+removed:
+  - {name: Death Cab for Cutie, removed_on: 2026-10-13, reason: line deleted in John's edit — confirm intended}
+  - {name: girl in red, removed_on: 2026-10-13, reason: Maya's pick}
+  - {name: Watchhouse, removed_on: 2026-10-13, reason: John}
+  - {name: The Wood Brothers, removed_on: 2026-10-13, reason: John}
+  - {name: Colter Wall, removed_on: 2026-10-13, reason: John}
+  - {name: Modest Mouse, removed_on: 2026-10-13, reason: John}
+  - {name: Pixies, removed_on: 2026-10-13, reason: John}
+  - {name: Bright Eyes, removed_on: 2026-10-13, reason: John}
+  - {name: Buddy Guy, removed_on: 2026-10-13, reason: John}

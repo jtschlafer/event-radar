@@ -31,7 +31,7 @@ cities:
       - {name: Heritage Bank Center, check: via_ticketmaster}
   Indianapolis:
     tz: America/Indiana/Indianapolis
-    tiers: [tier1, tier2]
+    tiers: [tier1, tier2, discovery]
     venues:
       - {name: Ruoff Music Center, check: via_ticketmaster}
       - {name: Old National Centre (Murat / Egyptian Room), check: via_ticketmaster}
