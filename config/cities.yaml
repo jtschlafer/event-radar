@@ -39,6 +39,14 @@ cities:
       - {name: The Vogue, check: weekly}
       - {name: TCU Amphitheater at White River State Park, check: via_ticketmaster}
       - {name: Gainbridge Fieldhouse, check: via_ticketmaster}
+  Bloomington:
+    tz: America/Indiana/Indianapolis
+    tiers: [tier1, tier2, discovery]
+    venues:
+      - {name: Buskirk-Chumley Theater, check: weekly}
+      - {name: IU Auditorium, check: weekly}
+      - {name: The Bluebird, check: weekly}
+      - {name: Jacobs School Musical Arts Center, check: weekly}
   Nashville:
     tz: America/Chicago
     tiers: [tier1, tier2]
@@ -73,4 +81,4 @@ cities:
 
 # Nearby cities that showed up in John's alerts. Not searched by default;
 # included only for Tier 1 if John opts in.
-optional_cities: [Lexington, Bloomington IN, Newport KY]
+optional_cities: [Lexington, Newport KY]

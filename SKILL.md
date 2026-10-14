@@ -56,7 +56,7 @@ For each artist, search only the cities their tier allows (`cities.yaml`):
 2. Web search `"<artist>" tour 2026 2027` for newly announced dates and presale details
    (artist site, Bandsintown, venue pages, AXS, Etix, See Tickets, DICE).
 3. Check each venue calendar in `cities.yaml` marked `check: weekly` for Tier 1/2 and Discovery matches.
-Discovery artists: Louisville, Cincinnati and Indianapolis only, unless promoted.
+Discovery artists: Louisville, Cincinnati, Indianapolis and Bloomington only, unless promoted.
 
 ### 4. Louisville arts, events, food
 Work through `sources.yaml` by section. Keep items that start in the next 60 days (festivals and
@@ -81,7 +81,7 @@ Each item becomes a record (schema at bottom). `id` = slug of `artist|venue|date
 ### 7. Render
 Fill `templates/email.html`. Section order is fixed:
 1. **Act now** — presales/on-sales in the next 10 days, sorted by start time. Tier 1 first.
-2. **New announcements** — grouped by city (Louisville, Cincinnati, Indianapolis, Nashville, Chicago, Columbus), then artist A–Z.
+2. **New announcements** — grouped by city (Louisville, Cincinnati, Indianapolis, Bloomington, Nashville, Chicago, Columbus), then artist A–Z.
 3. **Upcoming calendar** — everything on John's list with a show date in the next 120 days, by date.
 4. **Louisville: Arts** · **Louisville: Events** · **Louisville: Food & Drink**
 5. **Discovery picks** — at most 3, each with one line on why ("Last.fm-similar to Caamp + Shakey Graves").

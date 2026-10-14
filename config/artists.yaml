@@ -1,8 +1,8 @@
 # Event Radar artist list
 # Tiers decide geography (see cities.yaml):
-#   tier1     → all six cities incl. Chicago + Columbus
-#   tier2     → Louisville, Cincinnati, Indianapolis, Nashville
-#   discovery → Louisville + Cincinnati + Indianapolis only, until promoted
+#   tier1     → all seven cities incl. Chicago + Columbus
+#   tier2     → Louisville, Cincinnati, Indianapolis, Bloomington IN, Nashville
+#   discovery → Louisville, Cincinnati, Indianapolis, Bloomington IN only, until promoted
 # evidence: purchased | bit_follow (Bandsintown artist messages) | bit_tracked (show alerts / weekly list)
 #           | lastfm:<seed> (Last.fm similar to a listed artist) | spotify (pending export)
 # status: John's first edit applied 2026-10-13 (see state/feedback.md)
